@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+ 
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+</head>
+<body>
+  <header>
+     <nav>
+         <div class="logo">
+             Photo<span>pi</span>X
+         </div>
+         <div class="menu">
+             <a href="">Home</a>
+             <a href="">About</a>
+             <a href="">Gallery</a>
+             <a href="">Contact</a>
+         </div>
+         <div class="icon">
+            <i class="fas fa-search"></i>
+             <a href="">Login</a>
+         </div>
+     </nav> 
+     <section class="h-text">
+      <i class="fa fa-camera" id="camera"></i>  
+      <h1>Capturing the moments that captivate your heart.</h1> 
+      <input type="text" name="" placeholder="Search here...">
+      <button><i class="fa fa-search"></i></button>
+     </section>
+  </header>
+
+<section class="filter-gallery">
+<div class="portfolio-menu">
+    <ul>
+        <li class="active" data-filter="*">All</li>
+        <li data-filter=".nature">Nature</li>
+        <li data-filter=".faishon">Faishon</li>
+        <li data-filter=".wedding">Wedding</li>
+        <li data-filter=".beach">Beach</li>
+    </ul>
+</div>
+<div class="portfolo-item">
+    <div class="item nature">
+        <img src="./f1.jpg" width="100" height="100">
+    </div><div class="item faishon">
+        <img src="./her1.jpg" width="100" height="100">
+    </div>
+    <div class="item wedding">
+        <img src="./w1.jpg" width="100" height="100">
+    </div>
+    <div class="item beach">
+        <img src="./n1.jpg" width="100" height="100">
+    </div>
+    <div class="item nature">
+        <img src="./h2.jpg" width="100" height="100">
+    </div><div class="item faishon">
+        <img src="./f2.jpg" width="100" height="100">
+    </div>
+    <div class="item wedding">
+        <img src="./w2.jpg" width="100" height="100">
+    </div>
+    <div class="item beach">
+        <img src="./n2.jpg" width="100" height="100">
+    </div>
+    <div class="item nature">
+        <img src="./h3.jpg" width="100" height="100">
+    </div><div class="item faishon">
+        <img src="./f3.jpg" width="100" height="100">
+    </div>
+    <div class="item wedding">
+        <img src="./n3.jpg" width="100" height="100">
+    </div>
+    <div class="item beach">
+        <img src="./w3.jpg" width="100" height="100">
+    </div>
+</div>
+</section>
+<section class="member">
+<div class="member-info">
+    <h1>Our <span>Informations</span></h1>
+    <p>What our member says</p>
+</div>
+<div class="member-card">
+    <img src="./member.jpg" width="100">
+    <p>From Rajsthan, doing gymis good for healthy life. it helps
+        our body to fit. it release stress from our mind .From
+        Rajsthan,doing gym is good for healthy life. it helps our
+        body to fit. it release stress from our mind
+    </p>
+    <h2>* Maria sharapova</h2>
+<img src="./icon1.jpg" width="100">
+<img src="./icon3.jpg" width="100">
+<img src="./icon2.jpg" width="100">
+<img src="./icon4.jpg" width="100">
+</div>
+<div class="m-images">
+    <img src="./o1.jpg" alt="">
+    <img src="./o2.jpg" alt="">
+    <img src="./o3.jpg" alt="">
+    <img src="./o4.jpg" alt="">
+    <img src="./o5.jpg" alt="">
+    <img src="./o6.jpg" alt="">
+</div>
+</section>
+
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+<script type="text/javascript">
+    $('.portfolo-item').isotope({
+  // options
+  itemSelector: '.item',
+  layoutMode: 'fitRows'
+   });
+   $('.portfolio-menu ul li').click(function(){
+   $('.portfolio-menu ul li').removeClass('active');
+   $(this).addClass('active');
+
+  var selector = $(this).attr('data-filter');
+  $('.portfolo-item').isotope({
+      filter:selector
+  });
+  return false;
+
+
+   });
+
+</script>
+    <script src="./first.js"></script>
+
+</body>
+</html>
