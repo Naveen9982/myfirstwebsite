@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
  
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
@@ -28,7 +29,7 @@
      </nav> 
      <section class="h-text">
       <i class="fa fa-camera" id="camera"></i>  
-      <h1>Capturing the moments that captivate your heart.</h1> 
+      <h1 data-aos="fade-up">Capturing the moments that captivate your heart.</h1> 
       <input type="text" name="" placeholder="Search here...">
       <button><i class="fa fa-search"></i></button>
      </section>
@@ -45,29 +46,38 @@
     </ul>
 </div>
 <div class="portfolo-item">
-    <div class="item nature">
+    <div class="item nature" data-aos="flip-left" data-aos-offset="100"
+    data-aos-delay="100">
         <img src="./f1.jpg" width="100" height="100">
-    </div><div class="item faishon">
+    </div><div class="item faishon" data-aos="flip-left" data-aos-offset="100"
+    data-aos-delay="200">
         <img src="./her1.jpg" width="100" height="100">
     </div>
-    <div class="item wedding">
+    <div class="item wedding" data-aos="flip-left" data-aos-offset="100"
+    data-aos-delay="300">
         <img src="./w1.jpg" width="100" height="100">
     </div>
-    <div class="item beach">
+    <div class="item beach" data-aos="zoom-in" data-aos-offset="100"
+    data-aos-delay="100">
         <img src="./n1.jpg" width="100" height="100">
     </div>
-    <div class="item nature">
+    <div class="item nature" data-aos="zoom-in" data-aos-offset="100"
+    data-aos-delay="200">
         <img src="./h2.jpg" width="100" height="100">
-    </div><div class="item faishon">
+    </div><div class="item faishon" data-aos="zoom-in" data-aos-offset="100"
+    data-aos-delay="300">
         <img src="./f2.jpg" width="100" height="100">
     </div>
-    <div class="item wedding">
+    <div class="item wedding" data-aos="zoom-up" data-aos-offset="100"
+    data-aos-delay="100">
         <img src="./w2.jpg" width="100" height="100">
     </div>
-    <div class="item beach">
+    <div class="item beach" data-aos="zoom-up" data-aos-offset="100"
+    data-aos-delay="200">
         <img src="./n2.jpg" width="100" height="100">
     </div>
-    <div class="item nature">
+    <div class="item nature" data-aos="zoom-up" data-aos-offset="100"
+    data-aos-delay="300">
         <img src="./h3.jpg" width="100" height="100">
     </div><div class="item faishon">
         <img src="./f3.jpg" width="100" height="100">
@@ -81,11 +91,13 @@
 </div>
 </section>
 <section class="member">
-<div class="member-info">
+<div class="member-info" data-aos="zoom-up" data-aos-offset="100"
+data-aos-delay="100">
     <h1>Our <span>Informations</span></h1>
     <p>What our member says</p>
 </div>
-<div class="member-card">
+<div class="member-card" data-aos="zoom-down" data-aos-offset="100"
+data-aos-delay="200">
     <img src="./member.jpg" width="100">
     <p>From Rajsthan, doing gymis good for healthy life. it helps
         our body to fit. it release stress from our mind .From
@@ -98,7 +110,8 @@
 <img src="./icon2.jpg" width="100">
 <img src="./icon4.jpg" width="100">
 </div>
-<div class="m-images">
+<div class="m-images" data-aos="zoom-in" data-aos-offset="100"
+data-aos-delay="300">
     <img src="./o1.jpg" alt="">
     <img src="./o2.jpg" alt="">
     <img src="./o3.jpg" alt="">
@@ -108,6 +121,57 @@
 
 </div>
 </section>
+<footer>
+    <div class="newsletter">
+        <div data-aos="fade-up" data-aos-offset="200">
+            <h2>Subscribe our newsletter</h2>
+            <p>We're a team of non-cynics who truly care for our work.</p>
+        </div>
+        <div class="ntext" data-aos="fade-up-right" data-aos-offset="200"
+       >
+       <form action="">
+
+           <input type="text" name="" placeholder="Enter your email">
+       <button type="submit">Subscribe</button>
+       </form>
+            
+            
+          
+        </div>
+    </div>
+    <div class="f-contact" data-aos="zoom-in-up" data-aos-offset="200">
+        <div>
+            <h1>Information</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, odit!</p>
+            <i class="fab fa-whatsapp"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-telegram"></i>
+      <i class="fab fa-twitter"></i>
+
+        </div>
+        <div>
+            <h1>Useful links</h1>
+            <p>About</p>
+            <p>Gallery</p>
+            <p>Blog posts</p>
+            <p>Pricing plans</p>
+        </div>
+        <div>
+            <h1>Details</h1>
+            <p>Photographers</p>
+            <p>Gallery</p>
+            <p>About</p>
+            <p>Pricing plans</p>
+        </div>
+        <div>
+            <h1>Help & Support</h1>
+            <p>Privscy policy</p>
+            <p>Term & conditions</p>
+            <p>Trchnicsl Support</p>
+            <p>Customer care</p>
+        </div>
+    </div>
+</footer>
 
 <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
 <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
@@ -131,6 +195,10 @@
    });
 
 </script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+  </script>
     <script src="./first.js"></script>
 
 </body>
